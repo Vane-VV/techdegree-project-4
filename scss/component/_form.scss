@@ -1,0 +1,22 @@
+//forms 
+.form {
+    flex-basis: 100%;
+  }
+  
+  .input{
+    display: block;
+    width: 94%;
+    margin: $px10 $au 0;
+    border: $no;
+    padding: $px10;
+    border-bottom: 5px solid $color2;
+  }
+  
+  .hidden {
+    position:absolute;
+    left:-10000px;
+    top: $au;
+    width:$px1;
+    height:$px1;
+    overflow: $hide;
+  }

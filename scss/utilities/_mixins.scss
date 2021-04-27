@@ -1,0 +1,96 @@
+//images
+
+@mixin imgs {
+    display: block;
+    margin-left: $au;
+    margin-right: $au;
+    margin-top: $px10;
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+  .img-avatar {
+    @include imgs;
+  }
+  
+  .img-frame {
+    @include imgs;
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  
+  .img-logo {
+    display: block;
+    margin-left: $au;
+    margin-right: $au;
+  }
+
+//margins
+
+@mixin margins {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $min-width) {
+
+.container {
+  max-width: 1400px;
+  @include margins;
+}
+
+.centered {
+  @include margins;
+}
+
+.row {
+  flex-direction: row;
+}
+
+[class^=col] {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  align-items: center;
+}
+
+[class^=col] + [class^=col] {
+  margin-left: $px10;
+}
+
+//colums
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+      flex-basis: ($i * 8.33%);
+  }
+}
+
+//nav
+.nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  flex-basis: 100px;
+}
+
+//buttons
+.btn {
+  padding: $px10 30px;
+}
+
+.btn + .btn {
+  margin-left: $px10;
+}
+
+//logo
+.logo {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+}

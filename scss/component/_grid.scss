@@ -1,0 +1,30 @@
+//grid
+.container {
+    padding: 0 $px10;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em $px10;
+  }
+  
+  [class^=col] {
+    margin-top: $px10;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: $px10;
+    border-radius: 5px;
+  }
+
+//colums
+@for $i from 1 through 12 {
+    .theme.col-#{$i} {
+        background-color: adjust-hue($color5, $i * 75);
+    }
+}
+
+//flex
+.card {
+    flex-basis: 100%;
+  }
