@@ -41,21 +41,3 @@ p {
     border-left: 8px solid $color2;
     border-radius: 5px;
   }
-
-//images (move to mixins)
-.img-avatar {
-  @include imgs;
-}
-
-.img-frame {
-  @include imgs;
-  padding: 13px;
-  border: $px1 solid #ccc;
-}
-
-.img-logo {
-  display: block;
-  margin-left: $au;
-  margin-right: $au;
-}
-  
