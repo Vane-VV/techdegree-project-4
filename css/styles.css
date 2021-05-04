@@ -9,45 +9,6 @@
   margin-top: 0;
   align-items: center; }
 
-[class^=col] + [class^=col] {
-  margin-left: 10px; }
-
-.col-1 {
-  flex-basis: 8.33%; }
-
-.col-2 {
-  flex-basis: 16.66%; }
-
-.col-3 {
-  flex-basis: 24.99%; }
-
-.col-4 {
-  flex-basis: 33.32%; }
-
-.col-5 {
-  flex-basis: 41.65%; }
-
-.col-6 {
-  flex-basis: 49.98%; }
-
-.col-7 {
-  flex-basis: 58.31%; }
-
-.col-8 {
-  flex-basis: 66.64%; }
-
-.col-9 {
-  flex-basis: 74.97%; }
-
-.col-10 {
-  flex-basis: 83.3%; }
-
-.col-11 {
-  flex-basis: 91.63%; }
-
-.col-12 {
-  flex-basis: 99.96%; }
-
 .nav {
   flex-direction: row;
   justify-content: flex-end;
@@ -449,44 +410,59 @@ p {
   border-radius: 5px; }
 
 .theme.col-1 {
-  background-color: #c17b99; }
+  background-color: #c17b99;
+  flex-basis: 8.33%; }
 
 .theme.col-2 {
-  background-color: #c1b57b; }
+  background-color: #c1b57b;
+  flex-basis: 16.66%; }
 
 .theme.col-3 {
-  background-color: #7bc181; }
+  background-color: #7bc181;
+  flex-basis: 24.99%; }
 
 .theme.col-4 {
-  background-color: #7baac1; }
+  background-color: #7baac1;
+  flex-basis: 33.32%; }
 
 .theme.col-5 {
-  background-color: #a47bc1; }
+  background-color: #a47bc1;
+  flex-basis: 41.65%; }
 
 .theme.col-6 {
-  background-color: #c17b87; }
+  background-color: #c17b87;
+  flex-basis: 49.98%; }
 
 .theme.col-7 {
-  background-color: #bcc17b; }
+  background-color: #bcc17b;
+  flex-basis: 58.31%; }
 
 .theme.col-8 {
-  background-color: #7bc192; }
+  background-color: #7bc192;
+  flex-basis: 66.64%; }
 
 .theme.col-9 {
-  background-color: #7b99c1; }
+  background-color: #7b99c1;
+  flex-basis: 74.97%; }
 
 .theme.col-10 {
-  background-color: #b57bc1; }
+  background-color: #b57bc1;
+  flex-basis: 83.3%; }
 
 .theme.col-11 {
-  background-color: #c1817b; }
+  background-color: #c1817b;
+  flex-basis: 91.63%; }
 
 .theme.col-12 {
-  background-color: #aac17b; }
+  background-color: #aac17b;
+  flex-basis: 99.96%; }
 
 .card {
   flex-basis: 100%; }
 
+@media (min-width: 768px) {
+  [class^=col] + [class^=col] {
+    margin-left: 10px; } }
 .form {
   flex-basis: 100%; }
 

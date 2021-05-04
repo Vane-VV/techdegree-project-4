@@ -17,17 +17,9 @@
   align-items: center;
 }
 
-[class^=col] + [class^=col] {
-  margin-left: $px10;
-}
+//removed [class^=col] + [class^=col] {margin-left: $px10;}
 
-//colums
-
-@for $i from 1 through 12 {
-  .col-#{$i} {
-      flex-basis: ($i * 8.33%);
-  }
-}
+//colums @for $i from 1 through 12 {.col-#{$i} {flex-basis: ($i * 8.33%);}}
 
 //nav
 .nav {

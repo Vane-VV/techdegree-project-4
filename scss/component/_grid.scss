@@ -28,6 +28,7 @@
 @for $i from 1 through 12 {
     .theme.col-#{$i} {
         background-color: adjust-hue($color5, $i * 75);
+        flex-basis: ($i * 8.33%);
     }
 }
 
@@ -35,3 +36,10 @@
 .card {
     flex-basis: 100%;
   }
+
+//changes
+@media (min-width: $min-width) {
+[class^=col] + [class^=col] {
+  margin-left: $px10;
+}
+}
