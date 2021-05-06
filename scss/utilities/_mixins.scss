@@ -3,18 +3,22 @@
 //removed .container { max-width: 1400px; @include margins; }
 
 .centered {
+  @media(min-width: $min-width) {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
 }
 
 //removed .row { flex-direction: row; }
 
 [class^=col] {
+  @media(min-width: $min-width) {
   display: flex;
   justify-content: center;
   margin-top: 0;
   align-items: center;
+}
 }
 
 //removed [class^=col] + [class^=col] {margin-left: $px10;}
@@ -29,7 +33,9 @@
 }
 
 .nav-link {
+  @media(min-width: $min-width) {
   flex-basis: 100px;
+}
 }
 
 //buttons
@@ -38,7 +44,9 @@
 }
 
 .btn + .btn {
+  @media(min-width: $min-width) {
   margin-left: $px10;
+}
 }
 
 //logo

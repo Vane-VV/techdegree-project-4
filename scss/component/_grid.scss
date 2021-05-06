@@ -7,7 +7,7 @@
     margin-right: auto;
   }
   
-  .row {
+  .row{
     display: flex;
     flex-direction: column;
     padding: 1em $px10;
@@ -15,7 +15,7 @@
       flex-direction: row;
     }
   }
-  
+
   [class^=col] {
     margin-top: $px10;
     flex-basis: 100%;
